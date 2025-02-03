@@ -6,6 +6,7 @@ client_ignore_users_cast = lambda v: [
 
 
 LOG_LEVEL = config("LOG_LEVEL", default="INFO")
+USERS_DB_QUERY = config("USERS_DB_QUERY")
 AUTH0_MAX_RETRIES = config("AUTH0_MAX_RETRIES", cast=int, default=3)
 AUTH0_BACKOFF_FACTOR = config("AUTH0_BACKOFF_FACTOR", cast=int, default=2)
 AUTH0_URL = config("AUTH0_URL")

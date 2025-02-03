@@ -145,7 +145,7 @@ class App:
             item["email"] = item["email"].lower().strip()
             return item
 
-        result = self.db.select_table("select * from [clients].[users]").to_dict(
+        result = self.db.select_table(settings.USERS_DB_QUERY).to_dict(
             "records"
         )
         return [i for i in map(parse_data, result) if i]
