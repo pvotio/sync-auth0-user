@@ -9,6 +9,7 @@ To install and run the application, follow these steps:
 1. Clone the repository to your local machine.
 2. Install the required dependencies by running `pip3 install -r requirements.txt`.
 3. Set the necessary environment variables, including:
+   - `USERS_DB_QUERY`: query to load users information from database.
    - `MSSQL_SERVER`: the URL of the SQL Server database.
    - `MSSQL_DATABASE`: the name of database.
    - `MSSQL_USERNAME`: the username of SQL Server.
